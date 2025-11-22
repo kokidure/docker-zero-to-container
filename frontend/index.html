@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Docker - Frontend</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Docker Multi-Servicio</h1>
+    <p class="subtitle">Frontend + API Flask + Postgres</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Estado de la API</h2>
+      <p class="label">Mensaje:</p>
+      <p id="api-message" class="value">Cargando...</p>
+      <button onclick="loadApi()">Refrescar</button>
+    </section>
+
+    <section class="card">
+      <h2>Hora desde la base de datos</h2>
+      <p class="label">db_time:</p>
+      <p id="db-time" class="value">Cargando...</p>
+      <button onclick="loadDb()">Refrescar</button>
+    </section>
+
+    <section class="card info">
+      <h2>Detalles técnicos</h2>
+      <ul>
+        <li>Frontend: <code>Nginx (8080)</code></li>
+        <li>API: <code>Flask (5000)</code></li>
+        <li>Base de datos: <code>Postgres (5432)</code></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Demo creada por Koki Duré – DevFest Encarnación</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
